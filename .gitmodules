@@ -49,3 +49,9 @@
 [submodule "bundle/ropevim"]
 	path = bundle/ropevim
 	url = https://github.com/sontek/rope-vim.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/colorschemes"]
+	path = bundle/colorschemes
+	url = http://github.com/flazz/vim-colorschemes
