@@ -58,3 +58,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = http://github.com/davidhalter/jedi-vim
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = http://github.com/majutsushi/tagbar.git

@@ -1,4 +1,4 @@
-let g:pathogen_disabled = ['supertab']
+let g:pathogen_disabled = ['supertab','makegreen']
 
 call pathogen#infect()
 
@@ -148,18 +148,22 @@ let g:gundo_preview_bottom = 1
 
 nnoremap <silent> <Leader>f :CommandT<CR>
 
+map <leader>t :TagbarToggle<CR>
+
+let g:jedi#goto_command = "<leader>j"
+
 
 "let g:pyflakes_use_quickfix = 1
 
 "let g:pep8_map='<leader>8'
 
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
+"au FileType python set omnifunc=pythoncomplete#Complete
+"let g:SuperTabDefaultCompletionType = "context"
+"set completeopt=menuone,longest,preview
 
 map <leader>n :NERDTreeToggle<CR>
 
-map <leader>j :RopeGotoDefinition<CR>
+"map <leader>j :RopeGotoDefinition<CR>
 
 vnoremap < <gv
 vnoremap > >gv
@@ -192,7 +196,7 @@ colorscheme wombat256
 
 nmap <leader>a <Esc>:Ack!
 
-let DJANGO_SETTINGS_MODULE='./settings'
+"let DJANGO_SETTINGS_MODULE='./settings'
 
 " Add the virtualenv's site-packages to vim path
 py << EOF
