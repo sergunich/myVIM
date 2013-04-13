@@ -1,5 +1,3 @@
-let g:pathogen_disabled = ['supertab']
-
 call pathogen#infect()
 
 " An example for a vimrc file.

@@ -55,3 +55,6 @@
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
 	url = http://github.com/flazz/vim-colorschemes
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = http://github.com/davidhalter/jedi-vim
