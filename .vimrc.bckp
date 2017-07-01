@@ -1,6 +1,9 @@
-let g:pathogen_disabled = ['supertab','makegreen']
+set nocp
 
-call pathogen#infect()
+let g:pathogen_disabled = ['supertab','makegreen']
+set runtimepath+=~/.vim
+set rtp+=~/dotfiles/vim/autoload
+execute pathogen#infect()
 
 " An example for a vimrc file.
 "
@@ -107,11 +110,11 @@ set number
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 "Настройки табов для Python, согласно рекоммендациям
-set expandtab       "ставим табы пробелами
-set tabstop=4       "ширина таба (в пробелах)
-set shiftwidth=4    "ширина отступов и сдвигов
-set softtabstop=4   "4 пробела в табе
+set tabstop=4 
+set shiftwidth=4
 set smarttab
+set expandtab "Ставим табы пробелами
+set softtabstop=4 "4 пробела в табе
 ""Автоотступ
 set autoindent
 "Подсвечиваем все что можно подсвечивать
@@ -122,19 +125,15 @@ set t_Co=256
 
 
 "Всякие приятные мелочи
-set synmaxcol=0 "Maximum column in which to search for syntax items.
-set cursorline
-set cursorcolumn
 set scrolloff=3
 set showcmd
+set cursorline
 set ttyfast
 set undofile
 set gdefault
-set hidden "возможность переключать буфер в фон
 
 set textwidth=79
-set colorcolumn=+1,+40
-hi ColorColumn ctermbg=lightred guibg=lightred
+set colorcolumn=85
 set formatoptions=rl
 
 set foldmethod=indent
@@ -165,7 +164,7 @@ let g:jedi#goto_command = "<leader>j"
 "let g:SuperTabDefaultCompletionType = "context"
 "set completeopt=menuone,longest,preview
 
-map <leader>m :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 
 "map <leader>j :RopeGotoDefinition<CR>
 
